@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # قراءة التوكن من متغيرات البيئة
-TOKEN = os.getenv("7757901829:AAE_bfVde4-VxJhcY2BBSup4F2q1QV0fxo8")
+TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("🚀 Bot is running on Railway!")
@@ -22,4 +22,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
